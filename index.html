@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bribel Holdings - Interactive Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-water logo-icon"></i>
+                <h1>BRIBEL HOLDINGS</h1>
+            </div>
+            <p>Your trusted partner in water distribution, poshomill services, and cereal wholesale & retail🫘</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link" data-section="services">Services⚒️</a></li>
+                <li><a href="#" class="nav-link" data-section="products">Products🌾</a></li>
+                <li><a href="#" class="nav-link" data-section="animation">Animations🤗</a></li>
+                <li><a href="#" class="nav-link" data-section="contact">Contact📞</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Services Section -->
+            <section id="services" class="section active">
+                <h2>Our Services⚒️</h2>
+                <div class="services-grid">
+                    <div class="service-card" data-service="water">
+                        <i class="fas fa-tint"></i>
+                        <h3>Water Business</h3>
+                        <p>Purified drinking water, bottled water, and bulk water supply</p>
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                    <div class="service-card" data-service="poshomill">
+                        <i class="fas fa-industry"></i>
+                        <h3>Poshomill Services</h3>
+                        <p>High-quality maize flour processing with modern technology</p>
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                    <div class="service-card" data-service="cereal">
+                        <i class="fas fa-shopping-basket"></i>
+                        <h3>Cereal Retail</h3>
+                        <p>Wholesale and retail distribution of various cereals</p>
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Products Section -->
+            <section id="products" class="section">
+                <h2>Our Products</h2>
+                <div class="products-container">
+                    <div class="product">
+                        <h3>Purified Water</h3>
+                        <p>Available in 500ml, 1L, 5L, and 20L containers</p>
+                    </div>
+                    <div class="product">
+                        <h3>Maize Flour</h3>
+                        <p>Finely ground, nutritious maize flour in 1kg and 2kg packages</p>
+                    </div>
+                    <div class="product">
+                        <h3>Assorted Cereals</h3>
+                        <p>Wheat, rice, barley, and more available in bulk</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Animation Section -->
+            <section id="animation" class="section">
+                <h2>Interactive Animations</h2>
+                <div class="animation-controls">
+                    <div class="control-group">
+                        <h3>Box Animation📦</h3>
+                        <div class="animation-box" id="animationBox"></div>
+                        <button id="animateBoxBtn" class="animation-btn">Animate Box</button>
+                    </div>
+
+                    <div class="control-group">
+                        <h3>Card Flip🃏</h3>
+                        <div class="card-container">
+                            <div class="card" id="flipCard">
+                                <div class="card-front">
+                                    <p>Front</p>
+                                </div>
+                                <div class="card-back">
+                                    <p>Back</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="flipCardBtn" class="animation-btn">Flip Card</button>
+                    </div>
+
+                    <div class="control-group">
+                        <h3>Loading Animation🔃</h3>
+                        <div class="loader-container">
+                            <div class="loader" id="loader">
+                                <div class="loader-bar"></div>
+                                <div class="loader-bar"></div>
+                                <div class="loader-bar"></div>
+                                <div class="loader-bar"></div>
+                            </div>
+                        </div>
+                        <div class="loader-controls">
+                            <button id="startLoaderBtn" class="animation-btn">Start Loader</button>
+                            <button id="stopLoaderBtn" class="animation-btn">Stop Loader</button>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <h3>Popup Modal📳</h3>
+                        <button id="showModalBtn" class="animation-btn">Show Modal</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section">
+                <h2>Contact Us</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> calfornia Drive-Ruaka, Kiambu, Kenya</p>
+                        <p><i class="fas fa-phone"></i> +254 700 123 456</p>
+                        <p><i class="fas fa-envelope"></i> info@bribelholdings.com</p>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Modal -->
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <h2>Welcome to Bribel Holdings</h2>
+                <p>This is a sample modal that demonstrates animation controls with JavaScript.</p>
+                <p>You can close this modal by clicking the X button or anywhere outside the modal content.</p>
+            </div>
+        </div>
+
+       <footer>
+          <p>&copy;2025 Bribel Holdings. All rights reserved. | Purified Water | Cereal Milling | Grain Processing</p>
+        <p>Contact us:0713 567 4556 
+   </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
